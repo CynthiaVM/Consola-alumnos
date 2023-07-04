@@ -1,0 +1,19 @@
+# Carpeta de archivos compilados
+/dist
+
+# Carpeta de dependencias
+/node_modules
+
+# Archivos de configuración de Visual Studio Code
+.vscode/
+
+# Archivos de registro de errores de TypeScript
+*.log
+
+# Otros archivos y carpetas generados en el desarrollo
+.DS_Store
+.env
+.env.local
+.env.*.local
+.env.test
+.env.test.local
