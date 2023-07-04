@@ -16,7 +16,7 @@ import readline from 'readline';
 
 // // Guardado
 // const guardarAlumno = () => {
-// 	const data = JSON.stringify(almunos);
+// 	const data = JSON.stringify(alumnos);
 // 	const alumnos = fs.writeFileSync('src/alumnos.json', data);
 // 	console.log('Se guardo la informacion');
 // };
@@ -35,13 +35,13 @@ const rl = readline.createInterface({
 const alumno: any[] = [];
 
 const formulario = () => {
-	rl.question('Ingresar nombre: ', (nombre) => {
+	rl.question('Ingresar nombre: ', (nombre) => { //en nombre se deberia aclarar string ej nombre:string
 		rl.question('Ingresar apellido: ', (apellido) => {
 			rl.question('Ingresar edad: ', (edad) => {
 				const a = { nombre: nombre, apellido: apellido, edad: edad };
 				alumno.push(a);
 				console.log(alumno);
-				rl.close();
+				rl.close(); //cierra la funcion
 			});
 		});
 	});
